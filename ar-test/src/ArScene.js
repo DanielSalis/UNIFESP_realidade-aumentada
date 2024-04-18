@@ -12,23 +12,20 @@ function ArScene() {
 
   let scene, camera, renderer;
 
-  let models = [
-    "./dylan_armchair_yolk_yellow.glb",
-    "./sofa2.glb"
-  ];
+  let models = ["./dylan_armchair_yolk_yellow.glb", "./sofa2.glb"];
   let modelScaleFactor = [0.01, 0.03];
   let items = [];
   let itemSelectedIndex = 0;
 
   let controller;
 
-  useEffect(()=>{
+  useEffect(() => {
     init();
     setupFurnitureSelection();
     animate();
-  },[])
+  }, []);
 
-  const init = ()=> {
+  const init = () => {
     let myCanvas = document.getElementById("canvas");
     if (myCanvas == null) return;
     scene = new THREE.Scene();
@@ -93,9 +90,9 @@ function ArScene() {
     reticle.matrixAutoUpdate = false;
     reticle.visible = false;
     scene.add(reticle);
-  }
+  };
 
-  const onSelect= () => {
+  const onSelect = () => {
     if (reticle.visible) {
       let newModel = items[itemSelectedIndex].clone();
       newModel.visible = true;
@@ -109,7 +106,7 @@ function ArScene() {
 
       scene.add(newModel);
     }
-  }
+  };
 
   const onClicked = (e, selectItem, index) => {
     itemSelectedIndex = index;
@@ -120,10 +117,10 @@ function ArScene() {
     e.target.classList.add("clicked");
   };
 
-  const setupFurnitureSelection=()=> {
+  const setupFurnitureSelection = () => {
     for (let i = 0; i < models.length; i++) {
       const el = document.querySelector(`#item` + i);
-      if(el != null){
+      if (el != null) {
         el.addEventListener("beforexrselect", (e) => {
           e.preventDefault();
           e.stopPropagation();
@@ -135,13 +132,13 @@ function ArScene() {
         });
       }
     }
-  }
+  };
 
   const animate = () => {
-    if(renderer !== null && renderer !== undefined){
+    if (renderer !== null && renderer !== undefined) {
       renderer.setAnimationLoop(render);
     }
-  }
+  };
 
   const render = (timestamp, frame) => {
     if (frame) {
@@ -182,10 +179,22 @@ function ArScene() {
     }
 
     renderer.render(scene, camera);
-  }
+  };
 
   return (
-    <div className="ar-scene"></div>);
+    <div className="ar-scene">
+      <canvas id="canvas"></canvas>
+      <div className="navbar">
+        <img
+          alt="armchair"
+          className="button-image"
+          id="item0"
+          src="/armchair.png"
+        />
+        <img alt="sofa" className="button-image" id="item1" src="/sofa2.png" />
+      </div>
+    </div>
+  );
 }
 
 export default ArScene;
