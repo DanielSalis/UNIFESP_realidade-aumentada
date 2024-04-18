@@ -4,7 +4,7 @@ import { ARButton } from "three/examples/jsm/webxr/ARButton";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { XREstimatedLight } from "three/examples/jsm/webxr/XREstimatedLight";
 
-function App() {
+function ArScene() {
   let reticle;
   let hitTestSource = null;
   let hitTestSourceRequested = false;
@@ -195,7 +195,8 @@ function App() {
     renderer.render(scene, camera);
   }
 
-  return <div className="App"></div>;
+  return (
+    <div className="App"></div>);
 }
 
-export default App;
+export default ArScene;
