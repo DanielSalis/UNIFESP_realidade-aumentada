@@ -3,6 +3,7 @@ import * as THREE from "three";
 import { ARButton } from "three/examples/jsm/webxr/ARButton";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { XREstimatedLight } from "three/examples/jsm/webxr/XREstimatedLight";
+import { useEffect } from "react";
 
 function ArScene() {
   let reticle;
@@ -25,12 +26,15 @@ function ArScene() {
 
   let controller;
 
-  init();
-  setupFurnitureSelection();
-  animate();
+  useEffect(()=>{
+    init();
+    setupFurnitureSelection();
+    animate();
+  },[])
 
   function init() {
     let myCanvas = document.getElementById("canvas");
+    if (myCanvas == null) return;
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(
       70,
@@ -138,20 +142,24 @@ function ArScene() {
   function setupFurnitureSelection() {
     for (let i = 0; i < models.length; i++) {
       const el = document.querySelector(`#item` + i);
-      el.addEventListener("beforexrselect", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-      });
-      el.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        onClicked(e, items[i], i);
-      });
+      if(el != null){
+        el.addEventListener("beforexrselect", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+        });
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          onClicked(e, items[i], i);
+        });
+      }
     }
   }
 
   function animate() {
-    renderer.setAnimationLoop(render);
+    if(renderer !== null && renderer !== undefined){
+      renderer.setAnimationLoop(render);
+    }
   }
 
   function render(timestamp, frame) {
