@@ -32,7 +32,7 @@ function ArScene() {
     animate();
   },[])
 
-  function init() {
+  const init = ()=> {
     let myCanvas = document.getElementById("canvas");
     if (myCanvas == null) return;
     scene = new THREE.Scene();
@@ -107,7 +107,7 @@ function ArScene() {
     scene.add(reticle);
   }
 
-  function onSelect() {
+  const onSelect= () => {
     if (reticle.visible) {
       let newModel = items[itemSelectedIndex].clone();
       newModel.visible = true;
@@ -139,7 +139,7 @@ function ArScene() {
     e.target.classList.add("clicked");
   };
 
-  function setupFurnitureSelection() {
+  const setupFurnitureSelection=()=> {
     for (let i = 0; i < models.length; i++) {
       const el = document.querySelector(`#item` + i);
       if(el != null){
@@ -156,13 +156,13 @@ function ArScene() {
     }
   }
 
-  function animate() {
+  const animate = () => {
     if(renderer !== null && renderer !== undefined){
       renderer.setAnimationLoop(render);
     }
   }
 
-  function render(timestamp, frame) {
+  const render = (timestamp, frame) => {
     if (frame) {
       const referenceSpace = renderer.xr.getReferenceSpace();
       const session = renderer.xr.getSession();
@@ -204,7 +204,7 @@ function ArScene() {
   }
 
   return (
-    <div className="App"></div>);
+    <div className="ar-scene"></div>);
 }
 
 export default ArScene;
