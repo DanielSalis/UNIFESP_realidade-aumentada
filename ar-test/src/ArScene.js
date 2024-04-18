@@ -14,13 +14,9 @@ function ArScene() {
 
   let models = [
     "./dylan_armchair_yolk_yellow.glb",
-    "./ivan_armchair_mineral_blue.glb",
-    "./marble_coffee_table.glb",
-    "./flippa_functional_coffee_table_w._storagewalnut.glb",
-    "./frame_armchairpetrol_velvet_with_gold_frame.glb",
-    "./elnaz_nesting_side_tables_brass__green_marble.glb",
+    "./sofa2.glb"
   ];
-  let modelScaleFactor = [0.01, 0.01, 0.005, 0.01, 0.01, 0.01];
+  let modelScaleFactor = [0.01, 0.03];
   let items = [];
   let itemSelectedIndex = 0;
 
@@ -56,26 +52,18 @@ function ArScene() {
     renderer.setSize(myCanvas.innerWidth, myCanvas.innerHeight);
     renderer.xr.enabled = true;
 
-    // Don't add the XREstimatedLight to the scene initially
-    // It doesn't have any estimated lighting values until an AR session starts
     const xrLight = new XREstimatedLight(renderer);
     xrLight.addEventListener("estimationstart", () => {
-      // Swap the default light out for the estimated one so we start getting some estimated values.
       scene.add(xrLight);
       scene.remove(light);
-      // The estimated lighting also provides an env cubemap which we apply here
       if (xrLight.environment) {
         scene.environment = xrLight.environment;
       }
     });
 
     xrLight.addEventListener("estimationend", () => {
-      // Swap the lights back when we stop receiving estimated values
       scene.add(light);
       scene.remove(xrLight);
-
-      // Revert back to the default environment
-      // scene.environment =
     });
 
     let arButton = ARButton.createButton(renderer, {
@@ -111,10 +99,6 @@ function ArScene() {
     if (reticle.visible) {
       let newModel = items[itemSelectedIndex].clone();
       newModel.visible = true;
-      // this one will set the position but not the rotation
-      // newModel.position.setFromMatrixPosition(reticle.matrix);
-
-      // this will set the position and the rotation to face you
       reticle.matrix.decompose(
         newModel.position,
         newModel.quaternion,
@@ -129,13 +113,10 @@ function ArScene() {
 
   const onClicked = (e, selectItem, index) => {
     itemSelectedIndex = index;
-
-    // remove image selection from others to indicate unclicked
     for (let i = 0; i < models.length; i++) {
       const el = document.querySelector(`#item` + i);
       el.classList.remove("clicked");
     }
-    // set image to selected
     e.target.classList.add("clicked");
   };
 
