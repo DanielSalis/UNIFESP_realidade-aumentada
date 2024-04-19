@@ -185,6 +185,7 @@ function ArScene() {
     <div className="ar-scene">
       <canvas id="canvas"></canvas>
       <div className="navbar">
+        <button onClick={()=>window.location.reload()} style={{margin: "0 10px"}}> Voltar</button >
         <img
           alt="armchair"
           className="button-image"
