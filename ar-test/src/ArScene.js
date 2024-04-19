@@ -66,7 +66,7 @@ function ArScene() {
     let arButton = ARButton.createButton(renderer, {
       requiredFeatures: ["hit-test"],
       optionalFeatures: ["dom-overlay", "light-estimation"],
-      domOverlay: { root: document.body },
+      domOverlay: { root: document.getElementById("root") },
     });
     arButton.style.bottom = "20%";
     document.body.appendChild(arButton);
