@@ -74,7 +74,7 @@ function ArScene() {
     });
     arButton.style.bottom = "20%";
     arButton.addEventListener("click", ()=>{
-      toast("Ar iniciado")
+      toast("Modo AR ativado")
     })
     console.log(arButton)
     document.body.appendChild(arButton);
