@@ -7,6 +7,7 @@ import { ARButton } from "three/examples/jsm/webxr/ARButton";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { XREstimatedLight } from "three/examples/jsm/webxr/XREstimatedLight";
 import { useEffect } from "react";
+import { toast } from "sonner";
 
 function ArScene() {
   let reticle;
@@ -72,6 +73,9 @@ function ArScene() {
       domOverlay: { root: document.body },
     });
     arButton.style.bottom = "20%";
+    arButton.addEventListener("click", ()=>{
+      toast("Ar iniciado")
+    })
     console.log(arButton)
     document.body.appendChild(arButton);
 
@@ -147,7 +151,6 @@ function ArScene() {
   const render = (timestamp, frame) => {
     if (frame) {
       const elements = document.querySelectorAll('#ARButton');
-      debugger
         elements.forEach(element => {
           element.style.display = 'none';
       });
