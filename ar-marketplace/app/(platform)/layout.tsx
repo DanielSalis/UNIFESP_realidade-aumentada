@@ -1,4 +1,5 @@
 import { Toaster } from "sonner"
+import { Navbar } from "./_components/navbar"
 
 interface PlatformInterface{
   children: React.ReactNode
@@ -10,7 +11,7 @@ const PlatformLayout = ({
   return (
     <div className="h-full bg-slate-100">
       <Toaster position="top-right"/>
-      {/* <Navbar></Navbar> */}
+      <Navbar />
       <main className="pt-40 pb-20 bg-slate-100">
         {children}
       </main>
