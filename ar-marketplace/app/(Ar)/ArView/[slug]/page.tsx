@@ -16,7 +16,7 @@ function ArScene() {
 
   let scene, camera, renderer;
 
-  let models = ['./dylan_armchair_yolk_yellow.glb', './sofa2.glb'];
+  let models = ['../dylan_armchair_yolk_yellow.glb', '../sofa2.glb'];
   let modelScaleFactor = [0.01, 0.03];
   let items = [];
   let itemSelectedIndex = 0;

@@ -1,8 +1,12 @@
+'use client';
+
 import React from 'react';
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '@/components/ui/carousel';
 import {Card, CardContent} from '@/components/ui/card';
+import { useRouter } from 'next/navigation';
 
 interface ItemInterface {
+    'slug': string,
     'name': string,
     'imgSrc': string,
     'modelPath': string,
@@ -22,6 +26,11 @@ interface ProductsProps {
 }
 
 export const Products = ({productsList}: ProductsProps) => {
+  const router = useRouter();
+
+  const redirectToArPage = (productItem: ItemInterface) => {
+    router.push(`/ArView/${productItem.slug}`);
+  };
 
   return (
     <>
@@ -34,7 +43,7 @@ export const Products = ({productsList}: ProductsProps) => {
               <CarouselContent>
                 {category.items.map((item, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
+                    <div className="p-1" onClick={()=>redirectToArPage(item)}>
                       <Card>
                         <CardContent className="flex aspect-square items-center justify-center p-6">
                           <span className="text-3xl font-semibold">{item.name}</span>
