@@ -1,5 +1,5 @@
-import { Toaster } from "sonner"
-import { Navbar } from "./_components/navbar"
+import { Toaster } from 'sonner';
+import { Navbar } from './_components/navbar';
 
 interface PlatformInterface{
   children: React.ReactNode
@@ -17,7 +17,7 @@ const PlatformLayout = ({
       </main>
       {/* <Footer></Footer> */}
     </div>
-  )
-}
+  );
+};
 
-export default PlatformLayout
+export default PlatformLayout;

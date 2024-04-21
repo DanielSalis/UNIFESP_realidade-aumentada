@@ -1,13 +1,13 @@
 /* eslint no-use-before-define: 0 */  // -->
 //@ts-nocheck
 'use client';
-import "./App.css";
-import * as THREE from "three";
-import { ARButton } from "three/examples/jsm/webxr/ARButton";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { XREstimatedLight } from "three/examples/jsm/webxr/XREstimatedLight";
-import { useEffect } from "react";
-import { toast } from "sonner";
+import './App.css';
+import * as THREE from 'three';
+import { ARButton } from 'three/examples/jsm/webxr/ARButton';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { XREstimatedLight } from 'three/examples/jsm/webxr/XREstimatedLight';
+import { useEffect } from 'react';
+import { toast } from 'sonner';
 
 function ArScene() {
   let reticle;
@@ -16,7 +16,7 @@ function ArScene() {
 
   let scene, camera, renderer;
 
-  let models = ["./dylan_armchair_yolk_yellow.glb", "./sofa2.glb"];
+  let models = ['./dylan_armchair_yolk_yellow.glb', './sofa2.glb'];
   let modelScaleFactor = [0.01, 0.03];
   let items = [];
   let itemSelectedIndex = 0;
@@ -30,7 +30,7 @@ function ArScene() {
   }, []);
 
   const init = () => {
-    let myCanvas = document.getElementById("canvas");
+    let myCanvas = document.getElementById('canvas');
     if (myCanvas == null) return;
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(
@@ -54,7 +54,7 @@ function ArScene() {
     renderer.xr.enabled = true;
 
     const xrLight = new XREstimatedLight(renderer);
-    xrLight.addEventListener("estimationstart", () => {
+    xrLight.addEventListener('estimationstart', () => {
       scene.add(xrLight);
       scene.remove(light);
       if (xrLight.environment) {
@@ -62,21 +62,21 @@ function ArScene() {
       }
     });
 
-    xrLight.addEventListener("estimationend", () => {
+    xrLight.addEventListener('estimationend', () => {
       scene.add(light);
       scene.remove(xrLight);
     });
 
     let arButton = ARButton.createButton(renderer, {
-      requiredFeatures: ["hit-test"],
-      optionalFeatures: ["dom-overlay", "light-estimation"],
+      requiredFeatures: ['hit-test'],
+      optionalFeatures: ['dom-overlay', 'light-estimation'],
       domOverlay: { root: document.body },
     });
-    arButton.style.bottom = "20%";
-    arButton.addEventListener("click", ()=>{
-      toast("Modo AR ativado")
-    })
-    console.log(arButton)
+    arButton.style.bottom = '20%';
+    arButton.addEventListener('click', ()=>{
+      toast('Modo AR ativado');
+    });
+    console.log(arButton);
     document.body.appendChild(arButton);
 
     for (let i = 0; i < models.length; i++) {
@@ -88,7 +88,7 @@ function ArScene() {
     }
 
     controller = renderer.xr.getController(0);
-    controller.addEventListener("select", onSelect);
+    controller.addEventListener('select', onSelect);
     scene.add(controller);
 
     reticle = new THREE.Mesh(
@@ -119,21 +119,21 @@ function ArScene() {
   const onClicked = (e, selectItem, index) => {
     itemSelectedIndex = index;
     for (let i = 0; i < models.length; i++) {
-      const el = document.querySelector(`#item` + i);
-      el.classList.remove("clicked");
+      const el = document.querySelector('#item' + i);
+      el.classList.remove('clicked');
     }
-    e.target.classList.add("clicked");
+    e.target.classList.add('clicked');
   };
 
   const setupFurnitureSelection = () => {
     for (let i = 0; i < models.length; i++) {
-      const el = document.querySelector(`#item` + i);
+      const el = document.querySelector('#item' + i);
       if (el != null) {
-        el.addEventListener("beforexrselect", (e) => {
+        el.addEventListener('beforexrselect', (e) => {
           e.preventDefault();
           e.stopPropagation();
         });
-        el.addEventListener("click", (e) => {
+        el.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
           onClicked(e, items[i], i);
@@ -151,14 +151,14 @@ function ArScene() {
   const render = (timestamp, frame) => {
     if (frame) {
       const elements = document.querySelectorAll('#ARButton');
-        elements.forEach(element => {
-          element.style.display = 'none';
+      elements.forEach(element => {
+        element.style.display = 'none';
       });
       const referenceSpace = renderer.xr.getReferenceSpace();
       const session = renderer.xr.getSession();
 
       if (hitTestSourceRequested === false) {
-        session.requestReferenceSpace("viewer").then(function (referenceSpace) {
+        session.requestReferenceSpace('viewer').then(function (referenceSpace) {
           session
             .requestHitTestSource({ space: referenceSpace })
             .then(function (source) {
@@ -166,7 +166,7 @@ function ArScene() {
             });
         });
 
-        session.addEventListener("end", function () {
+        session.addEventListener('end', function () {
           hitTestSourceRequested = false;
           hitTestSource = null;
         });
@@ -197,7 +197,7 @@ function ArScene() {
     <div className="ar-scene">
       <canvas id="canvas"></canvas>
       <div className="navbar">
-        <button onClick={()=>window.location.href = '/'} style={{margin: "0 10px"}}> Voltar</button >
+        <button onClick={()=>window.location.href = '/'} style={{margin: '0 10px'}}> Voltar</button >
         <img
           alt="armchair"
           className="button-image"

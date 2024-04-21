@@ -1,4 +1,4 @@
-import { Toaster } from "sonner"
+import { Toaster } from 'sonner';
 
 interface ARInterface{
   children: React.ReactNode
@@ -12,7 +12,7 @@ const ArLayout = ({
       <Toaster position="top-right"/>
       {children}
     </>
-  )
-}
+  );
+};
 
-export default ArLayout
+export default ArLayout;
