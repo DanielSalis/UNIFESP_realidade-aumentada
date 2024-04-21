@@ -8,20 +8,20 @@
           {
             "slug": "sofa",
             "name": "Sofa",
-            "imgSrc": "./sofa2.png",
-            "modelPath": "./sofa2.glb",
+            "imgSrc": "../sofa2.png",
+            "modelPath": "../sofa2.glb",
             "price": 239.90,
             "discountPercentage": 5,
-            "modelScale": 0.01
+            "modelScale": 0.02
           },
           {
             "slug": "sofa-yellow",
             "name": "Sofa yellow",
-            "imgSrc": "./sofa2.png",
-            "modelPath": "./sofa2.glb",
+            "imgSrc": "../sofa2.png",
+            "modelPath": "../sofa2.glb",
             "price": 239.90,
             "discountPercentage": null,
-            "modelScale": 0.01
+            "modelScale": 0.02
           }
         ]
       },
@@ -31,11 +31,11 @@
           {
             "slug": "armchair-yellow",
             "name": "Armchair yellow",
-            "imgSrc": "./armchain.png",
-            "modelPath": "./dylan_armchair_yolk_yellow.glb",
+            "imgSrc": "../armchair.png",
+            "modelPath": "../dylan_armchair_yolk_yellow.glb",
             "price": 119.90,
             "discountPercentage": null,
-            "modelScale": 0.1
+            "modelScale": 0.01
           }
         ]
       },
@@ -45,11 +45,11 @@
           {
             "slug": "armchair-yellow",
             "name": "Armchair yellow",
-            "imgSrc": "./armchain.png",
-            "modelPath": "./dylan_armchair_yolk_yellow.glb",
+            "imgSrc": "../armchair.png",
+            "modelPath": "../dylan_armchair_yolk_yellow.glb",
             "price": 119.90,
             "discountPercentage": null,
-            "modelScale": 0.1
+            "modelScale": 0.01
           }
         ]
       }
@@ -64,11 +64,11 @@
           {
             "slug": "armchair-yellow",
             "name": "Armchair yellow",
-            "imgSrc": "./armchain.png",
-            "modelPath": "./dylan_armchair_yolk_yellow.glb",
+            "imgSrc": "../armchair.png",
+            "modelPath": "../dylan_armchair_yolk_yellow.glb",
             "price": 119.90,
             "discountPercentage": null,
-            "modelScale": 0.1
+            "modelScale": 0.01
           }
         ]
       }

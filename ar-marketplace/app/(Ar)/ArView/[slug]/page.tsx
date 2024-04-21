@@ -6,18 +6,22 @@ import * as THREE from 'three';
 import { ARButton } from 'three/examples/jsm/webxr/ARButton';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { XREstimatedLight } from 'three/examples/jsm/webxr/XREstimatedLight';
-import { useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import { toast } from 'sonner';
+import {usePathname, useRouter} from 'next/navigation';
+import JsonList from '../../../../mocks/mock.json';
 
 function ArScene() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [desiredItem, setDesiredItem] = useState();
+
   let reticle;
   let hitTestSource = null;
   let hitTestSourceRequested = false;
 
   let scene, camera, renderer;
 
-  let models = ['../dylan_armchair_yolk_yellow.glb', '../sofa2.glb'];
-  let modelScaleFactor = [0.01, 0.03];
   let items = [];
   let itemSelectedIndex = 0;
 
@@ -25,11 +29,24 @@ function ArScene() {
 
   useEffect(() => {
     init();
-    setupFurnitureSelection();
     animate();
-  }, []);
+  }, [desiredItem]);
 
-  const init = () => {
+  const init =  () => {
+    JsonList.map((product)=>{
+      product.categories.map( (category) => {
+        category.items.map( (item) => {
+          if (item.slug === pathname.split('/')[2]){
+            setDesiredItem(item);
+          }
+        });
+      });
+    });
+
+    if(!desiredItem){
+      return;
+    }
+
     let myCanvas = document.getElementById('canvas');
     if (myCanvas == null) return;
     scene = new THREE.Scene();
@@ -79,13 +96,10 @@ function ArScene() {
     console.log(arButton);
     document.body.appendChild(arButton);
 
-    for (let i = 0; i < models.length; i++) {
-      const loader = new GLTFLoader();
-      loader.load(models[i], function (glb) {
-        let model = glb.scene;
-        items[i] = model;
-      });
-    }
+    const loader = new GLTFLoader();
+    loader.load(desiredItem.modelPath, function (glb) {
+      items[itemSelectedIndex] = glb.scene;
+    });
 
     controller = renderer.xr.getController(0);
     controller.addEventListener('select', onSelect);
@@ -109,38 +123,38 @@ function ArScene() {
         newModel.quaternion,
         newModel.scale
       );
-      let scaleFactor = modelScaleFactor[itemSelectedIndex];
+      let scaleFactor = desiredItem.modelScale;
       newModel.scale.set(scaleFactor, scaleFactor, scaleFactor);
 
       scene.add(newModel);
     }
   };
 
-  const onClicked = (e, selectItem, index) => {
-    itemSelectedIndex = index;
-    for (let i = 0; i < models.length; i++) {
-      const el = document.querySelector('#item' + i);
-      el.classList.remove('clicked');
-    }
-    e.target.classList.add('clicked');
-  };
+  // const onClicked = (e, selectItem, index) => {
+  //   itemSelectedIndex = index;
+  //   for (let i = 0; i < models.length; i++) {
+  //     const el = document.querySelector('#item' + i);
+  //     el.classList.remove('clicked');
+  //   }
+  //   e.target.classList.add('clicked');
+  // };
 
-  const setupFurnitureSelection = () => {
-    for (let i = 0; i < models.length; i++) {
-      const el = document.querySelector('#item' + i);
-      if (el != null) {
-        el.addEventListener('beforexrselect', (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-        });
-        el.addEventListener('click', (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          onClicked(e, items[i], i);
-        });
-      }
-    }
-  };
+  // const setupFurnitureSelection = () => {
+  //   for (let i = 0; i < models.length; i++) {
+  //     const el = document.querySelector('#item' + i);
+  //     if (el != null) {
+  //       el.addEventListener('beforexrselect', (e) => {
+  //         e.preventDefault();
+  //         e.stopPropagation();
+  //       });
+  //       el.addEventListener('click', (e) => {
+  //         e.preventDefault();
+  //         e.stopPropagation();
+  //         onClicked(e, items[i], i);
+  //       });
+  //     }
+  //   }
+  // };
 
   const animate = () => {
     if (renderer !== null && renderer !== undefined) {
@@ -198,13 +212,15 @@ function ArScene() {
       <canvas id="canvas"></canvas>
       <div className="navbar">
         <button onClick={()=>window.location.href = '/'} style={{margin: '0 10px'}}> Voltar</button >
-        <img
-          alt="armchair"
-          className="button-image"
-          id="item0"
-          src="/armchair.png"
-        />
-        <img alt="sofa" className="button-image" id="item1" src="/sofa2.png" />
+        {
+          desiredItem &&
+            <img
+              alt="imagealt"
+              className="button-image"
+              id="item0"
+              src={desiredItem.imgSrc}
+            />
+        }
       </div>
     </div>
   );
