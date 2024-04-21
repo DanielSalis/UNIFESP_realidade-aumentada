@@ -1,6 +1,15 @@
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
+import JsonList from '../../mocks/mock.json';
+import {Products} from '@/app/(platform)/_components/products';
+
 const HomePage = () => {
+  const findProperTabContent = (tabname:string)=>{
+    const desiredProductSection = JsonList.find(item=>item.name === tabname);
+    return desiredProductSection ? desiredProductSection.categories : null;
+  };
+  console.log(findProperTabContent('All products'));
   return (
     <Tabs defaultValue="All products" className="w-full px-2">
       <TabsList className="w-full pl-32 overflow-scroll">
@@ -12,13 +21,14 @@ const HomePage = () => {
       </TabsList>
       <div className="mx-4">
         <TabsContent value="All products">
-          <p>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações (jornais, revistas, e sites) para testar e ajustar aspectos visuais (layout, tipografia, formatação, etc.) antes de utilizar conteúdo real. Também é utilizado em catálogos tipográficos, para demonstrar textos e títulos escritos com as fontes.[1]</p>
+          <Products productsList={findProperTabContent('All products')}></Products>
         </TabsContent>
         <TabsContent value="Best sellers">
-          <p>Teste2</p>
+          <Products productsList={findProperTabContent('Best sellers')}></Products>
         </TabsContent>
       </div>
     </Tabs>
+
   );
 };
 
