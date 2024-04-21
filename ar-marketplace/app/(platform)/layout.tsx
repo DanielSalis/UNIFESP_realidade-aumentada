@@ -12,7 +12,7 @@ const PlatformLayout = ({
     <div className="h-full bg-slate-100">
       <Toaster position="top-right"/>
       <Navbar />
-      <main className="pt-40 pb-20 bg-slate-100">
+      <main className="w-full pt-20 pb-20 bg-slate-100">
         {children}
       </main>
       {/* <Footer></Footer> */}
