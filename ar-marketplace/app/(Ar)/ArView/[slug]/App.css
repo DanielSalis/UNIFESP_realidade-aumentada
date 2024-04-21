@@ -20,9 +20,8 @@
 .navbar .button-image {
   display: inline-block;
   text-align: center;
-  padding: 1em 0.5em;
-  width: 100px;
-  height: 100px;
+  width: 45px;
+  height: 45px;
 }
 
 .clicked {

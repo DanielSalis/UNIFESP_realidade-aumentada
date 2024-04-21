@@ -10,6 +10,7 @@ import {useEffect, useState} from 'react';
 import { toast } from 'sonner';
 import {usePathname, useRouter} from 'next/navigation';
 import JsonList from '../../../../mocks/mock.json';
+import {Button} from '@/components/ui/button';
 
 function ArScene() {
   const router = useRouter();
@@ -208,19 +209,21 @@ function ArScene() {
   };
 
   return (
-    <div className="ar-scene">
-      <canvas id="canvas"></canvas>
-      <div className="navbar">
-        <button onClick={()=>window.location.href = '/'} style={{margin: '0 10px'}}> Voltar</button >
-        {
-          desiredItem &&
-            <img
-              alt="imagealt"
-              className="button-image"
-              id="item0"
-              src={desiredItem.imgSrc}
-            />
-        }
+    <div className="ar-scene h-full">
+      <canvas id="canvas" className=""></canvas>
+      <div className="flex items-center justify-center">
+        <Button onClick={()=>window.location.href = '/'} className="">
+          Voltar
+        </Button>
+        {/*{*/}
+        {/*  desiredItem &&*/}
+        {/*    <img*/}
+        {/*      alt="imagealt"*/}
+        {/*      className="button-image"*/}
+        {/*      id="item0"*/}
+        {/*      src={desiredItem.imgSrc}*/}
+        {/*    />*/}
+        {/*}*/}
       </div>
     </div>
   );
