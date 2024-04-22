@@ -16,7 +16,6 @@ type ProductItem = {
 }
 
 const DetailsPage = () => {
-  const router = useRouter();
   const pathname = usePathname();
   const [productId, setProductId] = useState('');
   const [product, setProduct] = useState<ProductItem | null>(null);
