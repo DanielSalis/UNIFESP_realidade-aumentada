@@ -1,5 +1,5 @@
 'use client';
-import {usePathname, useRouter} from 'next/navigation';
+import {usePathname} from 'next/navigation';
 import {useEffect, useState} from 'react';
 import JsonList from '@/mocks/mock.json';
 import {Button} from '@/components/ui/button';
