@@ -11,8 +11,9 @@
             "imgSrc": "../sofa2.png",
             "modelPath": "../sofa2.glb",
             "price": 239.90,
-            "discountPercentage": 5,
-            "modelScale": 0.02
+            "discountPercentage": 0.05,
+            "modelScale": 0.02,
+            "description": "Versátil e tendência de decoração, o sofá cinza é um móvel elegante e sóbrio, que traz conforto e aconchego para o cômodo e está disponível em diversos modelos. O sofá nesta tonalidade é interessante tanto para a composição com itens coloridos, quanto para conferir um ar mais monocromático ao ambiente."
           },
           {
             "slug": "sofa-yellow",
@@ -21,7 +22,8 @@
             "modelPath": "../sofa2.glb",
             "price": 239.90,
             "discountPercentage": null,
-            "modelScale": 0.02
+            "modelScale": 0.02,
+            "description": "Versátil"
           }
         ]
       },
