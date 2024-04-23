@@ -91,6 +91,7 @@ function ArScene() {
       domOverlay: { root: document.body },
     });
     arButton.style.bottom = '20%';
+    arButton.style.opacity = '1';
     arButton.addEventListener('click', ()=>{
       toast('Modo AR ativado');
     });
@@ -212,7 +213,10 @@ function ArScene() {
     <div className="ar-scene h-full">
       <canvas id="canvas" className=""></canvas>
       <div className="flex items-center justify-center">
-        <Button onClick={()=>window.location.href = '/'} className="">
+        <Button  onClick={()=> {
+          window.location.href = '/';
+          renderer = null;
+        }} className=" w-28 h-12">
           Voltar
         </Button>
         {/*{*/}
