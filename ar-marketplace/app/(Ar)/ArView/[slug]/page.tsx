@@ -219,15 +219,6 @@ function ArScene() {
         }} className=" w-28 h-12">
           Voltar
         </Button>
-        {/*{*/}
-        {/*  desiredItem &&*/}
-        {/*    <img*/}
-        {/*      alt="imagealt"*/}
-        {/*      className="button-image"*/}
-        {/*      id="item0"*/}
-        {/*      src={desiredItem.imgSrc}*/}
-        {/*    />*/}
-        {/*}*/}
       </div>
     </div>
   );
