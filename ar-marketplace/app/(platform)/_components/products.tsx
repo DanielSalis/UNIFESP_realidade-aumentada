@@ -29,7 +29,7 @@ export const Products = ({productsList}: ProductsProps) => {
   const router = useRouter();
 
   const redirectToArPage = (productItem: ItemInterface) => {
-    router.push(`/ArView/${productItem.slug}`);
+    router.push(`/details/${productItem.slug}`);
   };
 
   return (

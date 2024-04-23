@@ -1,8 +1,11 @@
 'use client';
-import {usePathname} from 'next/navigation';
+import {usePathname, useRouter} from 'next/navigation';
 import {useEffect, useState} from 'react';
 import JsonList from '@/mocks/mock.json';
 import {Button} from '@/components/ui/button';
+import {Badge} from '@/components/ui/badge';
+import Image from 'next/image';
+import Link from 'next/link';
 
 type ProductItem = {
   'slug': string,
@@ -19,6 +22,7 @@ const DetailsPage = () => {
   const pathname = usePathname();
   const [productId, setProductId] = useState('');
   const [product, setProduct] = useState<ProductItem | null>(null);
+  const router = useRouter();
 
   const findProductBySlug = (slug: string) => {
     let desiredItem;
@@ -33,6 +37,10 @@ const DetailsPage = () => {
     });
 
     return desiredItem || null;
+  };
+
+  const redirectToArPage = (productItem: ProductItem) => {
+    router.push(`/ArView/${productItem.slug}`);
   };
 
   useEffect(() => {
@@ -52,33 +60,55 @@ const DetailsPage = () => {
   }
 
   return(
-    <div className="w-full px-2">
-      <div className="flex justify-between items-center">
+    <div className="w-full px-2 flex flex-col justify-center items-center">
+      <div className=" w-full flex justify-between items-start">
         <div className="flex-col">
-          <h2>{product.name}</h2>
-          <h4>Nome do vendedor</h4>
+          <h2 className="text-2xl text-neutral-800 font-bold">{product.name}</h2>
+          <h4 className="text-xs text-neutral-500">Thirty six apartment company</h4>
         </div>
-        {product.modelPath ? 'AR - enabled' : ''}
+        {product.modelPath ? <Link href={`/ArView/${product.slug}`}><Badge className="text-md bg-sky-500/10 text-sky-700">AR - enabled</Badge></Link> : null}
       </div>
 
-      <img src={product.imgSrc} alt={`Imagem ${product.name}`}/>
-
-      <div className="flex justify-between items-center">
-        <div className="flex-col">
-          <h2>{product.discountPercentage ? product.price - (product.price * product.discountPercentage) : ''}</h2>
-          <h4>{product.price}</h4>
-        </div>
-        <span>2 in stock</span>
+      <div className="w-full h-[320px] relative mt-5">
+        <Image
+          fill
+          src={`/public/${product.imgSrc}`}
+          alt={`Imagem ${product.name}`}
+          className="rounded-sm object-cover"
+        />
       </div>
 
-      <div className="w-full flex justify-center">
-        <Button>Add to cart</Button>
+      <div className="flex justify-between items-startr w-full flex justify-between mt-5">
+        {product.discountPercentage ?
+          <div className="flex-col">
+            <h2 className="text-2xl text-red-800">{product.discountPercentage ? (product.price - (product.price * product.discountPercentage)).toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD'
+            }) : ''}</h2>
+            <h4 className="text-md text-neutral-500 line-through">{(product.price).toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD'
+            })}</h4>
+          </div> :
+          <div className="flex-col">
+            <h2 className="text-2xl text-red-800">{(product.price).toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD'
+            })}</h2>
+          </div>
+
+        }
+        <span className="text-md text-neutral-500">2 in stock</span>
+      </div>
+
+      <div className="w-full flex justify-center mt-5">
+        <Button className="w-full">Add to cart</Button>
       </div>
 
       {product.description &&
-          <div>
-            <h2>Description</h2>
-            <p>{product.description ? product.description : null}</p>
+          <div className="w-full flex flex-col justify-between mt-5">
+            <h2 className="text font-bold">Description</h2>
+            <p className="mt-2">{product.description ? product.description : null}</p>
           </div>
       }
     </div>
