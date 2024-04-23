@@ -93,7 +93,11 @@ function ArScene() {
     arButton.style.bottom = '20%';
     arButton.style.opacity = '1';
     arButton.addEventListener('click', ()=>{
-      toast('Modo AR ativado');
+      toast('Modo AR ativado', {
+        style: {
+          marginTop: '20px'
+        }
+      });
     });
     console.log(arButton);
     document.body.appendChild(arButton);
@@ -217,7 +221,7 @@ function ArScene() {
           window.location.href = '/';
           renderer = null;
         }} className=" w-28 h-12">
-          Voltar
+          Home
         </Button>
       </div>
     </div>
