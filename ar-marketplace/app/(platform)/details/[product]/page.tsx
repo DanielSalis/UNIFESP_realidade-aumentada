@@ -6,6 +6,7 @@ import {Button} from '@/components/ui/button';
 import {Badge} from '@/components/ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
+import {Camera} from 'lucide-react';
 
 type ProductItem = {
   'slug': string,
@@ -66,7 +67,13 @@ const DetailsPage = () => {
           <h2 className="text-2xl text-neutral-800 font-bold">{product.name}</h2>
           <h4 className="text-xs text-neutral-500">Thirty six apartment company</h4>
         </div>
-        {product.modelPath ? <Link href={`/ArView/${product.slug}`}><Badge className="text-md bg-sky-500/10 text-sky-700">AR - enabled</Badge></Link> : null}
+        {product.modelPath &&
+            <Link href={`/ArView/${product.slug}`}>
+              <Badge className="text-md bg-sky-500/10 text-sky-700">
+                <Camera className="h-4 w-4 mr-2" />
+                AR - compatible
+              </Badge>
+            </Link>}
       </div>
 
       <div className="w-full h-[320px] relative mt-5">
