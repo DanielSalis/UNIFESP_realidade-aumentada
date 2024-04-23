@@ -71,7 +71,7 @@ const DetailsPage = () => {
             <Link href={`/ArView/${product.slug}`}>
               <Badge className="text-md bg-sky-500/10 text-sky-700">
                 <Camera className="h-4 w-4 mr-2" />
-                AR - compatible
+                AR- room
               </Badge>
             </Link>}
       </div>

@@ -36,8 +36,9 @@
             "imgSrc": "../armchair.png",
             "modelPath": "../dylan_armchair_yolk_yellow.glb",
             "price": 119.90,
-            "discountPercentage": null,
-            "modelScale": 0.01
+            "discountPercentage": 0.05,
+            "modelScale": 0.01,
+            "description": "The yellow armchair is a vibrant and eye-catching piece of furniture that adds a pop of color to any room. Its bold hue instantly brightens up the space, creating a cheerful and inviting atmosphere. The armchair features a classic design with curved arms and a comfortable seat, making it the perfect place to relax and unwind.\n\nConstructed with high-quality materials, the yellow armchair is not only stylish but also durable and comfortable. The plush cushions provide ample support, making it ideal for long hours of sitting. The bright yellow color adds a playful touch to the room, making it a statement piece that is sure to be noticed.\n\nWhether you're looking to add a splash of color to your living room or create a cozy reading nook in your bedroom, the yellow armchair is a stylish and versatile choice. Its bold color and classic design make it a timeless piece that will enhance any decor style."
           }
         ]
       },
@@ -45,7 +46,7 @@
         "name": "Lamps",
         "items":[
           {
-            "slug": "armchair-yellow",
+            "slug": "armchair-yellow2",
             "name": "Armchair yellow",
             "imgSrc": "../armchair.png",
             "modelPath": "../dylan_armchair_yolk_yellow.glb",
@@ -64,7 +65,7 @@
         "name": "Armchairs",
         "items":[
           {
-            "slug": "armchair-yellow",
+            "slug": "armchair-yellow3",
             "name": "Armchair yellow",
             "imgSrc": "../armchair.png",
             "modelPath": "../dylan_armchair_yolk_yellow.glb",
