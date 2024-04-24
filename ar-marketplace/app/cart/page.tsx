@@ -6,9 +6,11 @@ import {Card} from '@/components/ui/card';
 import {Separator} from '@/components/ui/separator';
 import {Button} from '@/components/ui/button';
 import {Lock} from 'lucide-react';
+import {useRouter} from 'next/navigation';
 
 const CartPage = () => {
   const {items} = useCart();
+  const router = useRouter();
 
   if(!items || items.length < 1) {
     return <span> Cart is empty</span>;
@@ -72,7 +74,7 @@ const CartPage = () => {
         })}</span>
       </div>
       <div className="flex justify-between items-center mt-1">
-        <Button className="w-full mt-6">
+        <Button onClick={()=>router.push('/checkout')} className="w-full mt-6">
           <label>Buy</label>
         </Button>
       </div>
