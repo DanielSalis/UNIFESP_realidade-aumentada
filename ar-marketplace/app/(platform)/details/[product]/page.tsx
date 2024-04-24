@@ -7,6 +7,7 @@ import {Badge} from '@/components/ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
 import {Camera} from 'lucide-react';
+import {useCart} from '@/context/CartContext';
 
 type ProductItem = {
   'slug': string,
@@ -24,6 +25,7 @@ const DetailsPage = () => {
   const [productId, setProductId] = useState('');
   const [product, setProduct] = useState<ProductItem | null>(null);
   const router = useRouter();
+  const {addToCart} = useCart();
 
   const findProductBySlug = (slug: string) => {
     let desiredItem;
@@ -109,7 +111,7 @@ const DetailsPage = () => {
       </div>
 
       <div className="w-full flex justify-center mt-5">
-        <Button className="w-full">Add to cart</Button>
+        <Button className="w-full" onClick={()=>addToCart(product)}>Add to cart</Button>
       </div>
 
       {product.description &&
