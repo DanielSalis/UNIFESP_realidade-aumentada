@@ -219,6 +219,7 @@ function ArScene() {
       <div className="flex items-center justify-center">
         <Button  onClick={()=> {
           window.location.href = '/';
+          setDesiredItem(null);
           renderer = null;
         }} className=" w-28 h-12">
           Home
