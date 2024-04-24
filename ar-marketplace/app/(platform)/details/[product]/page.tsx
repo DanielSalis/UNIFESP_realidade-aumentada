@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {Camera} from 'lucide-react';
 import {useCart} from '@/context/CartContext';
+import {toast} from 'sonner';
 
 type ProductItem = {
   'slug': string,
@@ -54,7 +55,10 @@ const DetailsPage = () => {
     setProduct(findProductBySlug(productId));
   }, [productId]);
 
-  console.log(product);
+  const handleAddToCart = (product: ProductItem) => {
+    toast(`${product.name} adicionado no carrinho`);
+    addToCart(product);
+  };
 
   if(!product) {
     return (
@@ -111,7 +115,7 @@ const DetailsPage = () => {
       </div>
 
       <div className="w-full flex justify-center mt-5">
-        <Button className="w-full" onClick={()=>addToCart(product)}>Add to cart</Button>
+        <Button className="w-full" onClick={()=>handleAddToCart(product)}>Add to cart</Button>
       </div>
 
       {product.description &&

@@ -88,7 +88,7 @@ export const Navbar = () => {
       <div className="flex">
         <Logo />
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center" onClick={()=>router.push(('/cart'))}>
         <ShoppingCart className=" h-4 w4" />
         {totalQuantity > 0 &&
             <Badge variant="secondary" className=" -ml-2 -mt-6">{totalQuantity}</Badge>
