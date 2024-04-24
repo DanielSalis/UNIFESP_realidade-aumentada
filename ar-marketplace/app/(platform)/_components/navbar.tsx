@@ -41,9 +41,9 @@ export const Navbar = () => {
       href: '/',
     },
     {
-      label: 'ArView',
-      icon: <Camera className="h-4 w-4 mr-2" />,
-      href: '/ArView',
+      label: 'Cart',
+      icon: <ShoppingCart className="h-4 w-4 mr-2" />,
+      href: '/cart',
     },
   ];
 
