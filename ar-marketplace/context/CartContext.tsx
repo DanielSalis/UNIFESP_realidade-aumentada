@@ -1,9 +1,14 @@
 import {createContext, ReactNode, useContext, useState} from 'react';
 
 type Product = {
-    slug: string;
-    name: string;
-    price: number;
+    'slug': string,
+    'name': string,
+    'imgSrc': string,
+    'modelPath': string,
+    'price': number,
+    'discountPercentage': number | null,
+    'modelScale': number,
+    'description': string,
 };
 
 type CartItem = {

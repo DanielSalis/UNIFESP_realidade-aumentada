@@ -56,7 +56,9 @@ const DetailsPage = () => {
   }, [productId]);
 
   const handleAddToCart = (product: ProductItem) => {
-    toast(`${product.name} adicionado no carrinho`);
+    toast(`${product.name} adicionado no carrinho`, {style: {
+      marginTop: '20px'
+    }});
     addToCart(product);
   };
 
