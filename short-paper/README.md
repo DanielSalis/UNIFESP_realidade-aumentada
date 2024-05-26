@@ -1,0 +1,5 @@
+## Compile
+
+```
+lualatex main.tex
+```

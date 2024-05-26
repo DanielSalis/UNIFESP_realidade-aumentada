@@ -1,73 +1,34 @@
-\documentclass[12pt]{article}
-
-% Pacotes necessários
-\usepackage[left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
-\usepackage{setspace}
-\usepackage{fontspec} % Use apenas se estiver usando XeLaTeX ou LuaLaTeX
-\usepackage{titlesec}
-\usepackage{fancyhdr}
-
-% Configurações de fonte (use apenas se estiver usando XeLaTeX ou LuaLaTeX)
-\setmainfont{Times New Roman}
-
-% Configurações de espaçamento
-\onehalfspacing
-
-% Configurações de parágrafos
-\setlength{\parindent}{1.25cm}
-
-% Configurações de cabeçalhos e rodapés
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot[C]{\thepage}
-
-% Configurações de títulos e subtítulos
-\titleformat{\section}{\bfseries\centering\Large}{\thesection}{1em}{}
-\titleformat{\subsection}{\bfseries\centering\large}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\bfseries\centering\normalsize}{\thesubsubsection}{1em}{}
-
-% Início do documento
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[brazil]{babel}
+\usepackage[utf8] {inputenc}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-% Título
-\title{Título do Trabalho}
-\author{Nome do Autor}
-\date{}
+\title{Desenvolvimento de uma apli\\
+}
+
+\author{
+  \IEEEauthorblockN{Daniel Amorim Vilela de Salis}
+  \IEEEauthorblockA{123.145\\
+    \textit{Universidade Federal de São Paulo}\\
+    \ São José dos Campos, São Paulo\\
+    \ daniel.salis@unifesp.br} \\
+
+}
+
 \maketitle
 
-% Resumo
 \begin{abstract}
-  Este é um exemplo de resumo. Descreva brevemente os objetivos, metodologia, resultados e conclusões do trabalho.
+  Este artigo tem como objetivo demonstrar o resultado de um experimento, envolvendo diferentes tipos de técnicas de aprendizado supervisionado (KNN, Linear SVC, Árvores de decisão e Naive Bayes) aplicadas ao "iris dataset".
 \end{abstract}
-
-% Palavras-chave
-\textbf{Palavras-chave:} palavra1; palavra2; palavra3.
-
-% Introdução
-\section{Introdução}
-Este trabalho aborda...
-
-% Revisão de Literatura
-\section{Revisão de Literatura}
-Conforme Silva (2020)...
-
-% Metodologia
-\section{Metodologia}
-A pesquisa foi conduzida...
-
-% Resultados e Discussão
-\section{Resultados e Discussão}
-Os resultados indicam...
-
-% Conclusão
-\section{Conclusão}
-Em suma, o estudo...
-
-% Referências
-\section*{Referências}
-\begin{itemize}
-  \item SILVA, João. \textit{Título do livro}. 2. ed. São Paulo: Editora, 2020.
-  \item PEREIRA, Maria. \textit{Título do artigo}. Revista Científica, São Paulo, v. 10, n. 2, p. 45-56, 2020.
-\end{itemize}
 
 \end{document}
