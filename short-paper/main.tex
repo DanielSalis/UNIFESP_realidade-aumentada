@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+% Pacotes necessários
+\usepackage[left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{fontspec} % Use apenas se estiver usando XeLaTeX ou LuaLaTeX
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% Configurações de fonte (use apenas se estiver usando XeLaTeX ou LuaLaTeX)
+\setmainfont{Times New Roman}
+
+% Configurações de espaçamento
+\onehalfspacing
+
+% Configurações de parágrafos
+\setlength{\parindent}{1.25cm}
+
+% Configurações de cabeçalhos e rodapés
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+% Configurações de títulos e subtítulos
+\titleformat{\section}{\bfseries\centering\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\centering\large}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\bfseries\centering\normalsize}{\thesubsubsection}{1em}{}
+
+% Início do documento
+\begin{document}
+
+% Título
+\title{Título do Trabalho}
+\author{Nome do Autor}
+\date{}
+\maketitle
+
+% Resumo
+\begin{abstract}
+  Este é um exemplo de resumo. Descreva brevemente os objetivos, metodologia, resultados e conclusões do trabalho.
+\end{abstract}
+
+% Palavras-chave
+\textbf{Palavras-chave:} palavra1; palavra2; palavra3.
+
+% Introdução
+\section{Introdução}
+Este trabalho aborda...
+
+% Revisão de Literatura
+\section{Revisão de Literatura}
+Conforme Silva (2020)...
+
+% Metodologia
+\section{Metodologia}
+A pesquisa foi conduzida...
+
+% Resultados e Discussão
+\section{Resultados e Discussão}
+Os resultados indicam...
+
+% Conclusão
+\section{Conclusão}
+Em suma, o estudo...
+
+% Referências
+\section*{Referências}
+\begin{itemize}
+  \item SILVA, João. \textit{Título do livro}. 2. ed. São Paulo: Editora, 2020.
+  \item PEREIRA, Maria. \textit{Título do artigo}. Revista Científica, São Paulo, v. 10, n. 2, p. 45-56, 2020.
+\end{itemize}
+
+\end{document}
