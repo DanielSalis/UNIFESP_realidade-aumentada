@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Fedora 39)  (format=lualatex 2024.5.21)  26 MAY 2024 15:03
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Fedora 39)  (format=lualatex 2024.5.21)  30 MAY 2024 11:12
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -513,6 +513,30 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/bx/n' instead on input line 30.
 
 
+LaTeX Font Warning: Font shape `TU/ptm/m/sc' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 34.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+\TU/ptm/bx/it/8 between AR vs. MR vs. VR vs. XR?” In-te-rac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+\TU/ptm/bx/it/8 De-sign Foun-da-tion - IxDF. https://www.interaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+\TU/ptm/bx/it/8 design.org/li-te-ra-ture/ar-ti-cle/beyond-ar-vs-vr-what-is-the-
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 39--40
+\TU/ptm/bx/it/8 difference-between-ar-vs-mr-vs-vr-vs-xr (ac-ces-sed May. 30,
+ []
+
+
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
 
@@ -533,26 +557,30 @@ Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 5493 strings out of 478285
+ 5490 strings out of 478285
  100000,1977958 words of node,token memory allocated
- 529 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 10 attribute, 53 glue_spec
+ 534 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 10 attribute, 54 glue_spec
 , 7 attribute_list, 1 write nodes
-   avail lists: 2:257,3:44,4:27,5:93,6:12,7:1712,9:205,10:11,11:177
- 25520 multiletter control sequences out of 65536+600000
- 24 fonts using 1918607 bytes
- 55i,8n,59p,235b,291s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></u
-sr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr
-/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/s
-hare/texlive/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on main.pdf (1 page, 18401 bytes).
+   avail lists: 2:314,3:107,4:39,5:135,6:24,7:3047,9:247,10:17,11:285
+ 25517 multiletter control sequences out of 65536+600000
+ 24 fonts using 1918927 bytes
+ 55i,8n,59p,321b,291s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></u
+sr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/
+share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/sh
+are/texlive/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/shar
+e/texlive/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
+Output written on main.pdf (1 page, 25299 bytes).
 
-PDF statistics: 36 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+PDF statistics: 43 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
