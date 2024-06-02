@@ -1,238 +1,141 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Fedora 39)  (format=lualatex 2024.5.21)  2 JUN 2024 12:19
- restricted system commands enabled.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.21)  2 JUN 2024 12:26
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2022-11-01> patch level 1
-Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
-Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2022-10-04 2.75 ConTeXt Lua libraries -- extended c
-ollection.
-luaotfload | conf : Root cache directory is "/home/daniel/.texlive2023/texmf-var
-/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2022-10-03.lua" from kpse-res
-olved path "/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader-2022-
-10-03.lua".
-Lua-only attribute luaotfload@noligature = 1
-luaotfload | init : Context OpenType loader version 3.120
-Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
-Inserting `luaotfload.node_processor' in `hpack_filter'.
-Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
-Inserting `luaotfload.define_font' in `define_font'.
-Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/home/daniel/.texlive2023/texmf-var
-/luatex-cache/generic/names".
-Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
-Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
-Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
-Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
-Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
-Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
-Inserting `luaotfload.cleanup_files' in `wrapup_run'.
-Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
-Inserting `luaotfload.glyphinfo' in `glyph_info'.
-Lua-only attribute luaotfload.letterspace_done = 3
-Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
-Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'. L3 programm
-ing layer <2023-02-22>
-Inserting `tracingstacklevels' in `input_level_string'.
-(/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+L3 programming layer <2023-02-22> (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
-\@IEEEtrantmpdimenA=\dimen139
-\@IEEEtrantmpdimenB=\dimen140
-\@IEEEtrantmpdimenC=\dimen141
-\@IEEEtrantmpcountA=\count183
-\@IEEEtrantmpcountB=\count184
-\@IEEEtrantmpcountC=\count185
+\@IEEEtrantmpdimenA=\dimen140
+\@IEEEtrantmpdimenB=\dimen141
+\@IEEEtrantmpdimenC=\dimen142
+\@IEEEtrantmpcountA=\count185
+\@IEEEtrantmpcountB=\count186
+\@IEEEtrantmpcountC=\count187
 \@IEEEtrantmptoksA=\toks16
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 50
-3.
-LaTeX Font Info:    No file TUptm.fd. on input line 503.
-
-LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 503.
-
-luaotfload | db : Font names database loaded from /home/daniel/.texlive2023/texm
-f-var/luatex-cache/generic/names/luaotfload-names.luc.gz
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
 -- Using 8.5in x 11in (letter) paper.
--- Using DVI output.
-\@IEEEnormalsizeunitybaselineskip=\dimen142
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen143
 -- This is a 10 point document.
-\CLASSINFOnormalsizebaselineskip=\dimen143
-\CLASSINFOnormalsizeunitybaselineskip=\dimen144
-\IEEEnormaljot=\dimen145
+\CLASSINFOnormalsizebaselineskip=\dimen144
+\CLASSINFOnormalsizeunitybaselineskip=\dimen145
+\IEEEnormaljot=\dimen146
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-\IEEEquantizedlength=\dimen146
-\IEEEquantizedlengthdiff=\dimen147
-\IEEEquantizedtextheightdiff=\dimen148
-\IEEEilabelindentA=\dimen149
-\IEEEilabelindentB=\dimen150
-\IEEEilabelindent=\dimen151
-\IEEEelabelindent=\dimen152
-\IEEEdlabelindent=\dimen153
-\IEEElabelindent=\dimen154
-\IEEEiednormlabelsep=\dimen155
-\IEEEiedmathlabelsep=\dimen156
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen147
+\IEEEquantizedlengthdiff=\dimen148
+\IEEEquantizedtextheightdiff=\dimen149
+\IEEEilabelindentA=\dimen150
+\IEEEilabelindentB=\dimen151
+\IEEEilabelindent=\dimen152
+\IEEEelabelindent=\dimen153
+\IEEEdlabelindent=\dimen154
+\IEEElabelindent=\dimen155
+\IEEEiednormlabelsep=\dimen156
+\IEEEiedmathlabelsep=\dimen157
 \IEEEiedtopsep=\skip48
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@IEEEsubequation=\count190
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@IEEEsubequation=\count192
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\c@figure=\count191
-\c@table=\count192
-\@IEEEeqnnumcols=\count193
-\@IEEEeqncolcnt=\count194
-\@IEEEsubeqnnumrollback=\count195
-\@IEEEquantizeheightA=\dimen157
-\@IEEEquantizeheightB=\dimen158
-\@IEEEquantizeheightC=\dimen159
-\@IEEEquantizeprevdepth=\dimen160
-\@IEEEquantizemultiple=\count196
+\c@figure=\count193
+\c@table=\count194
+\@IEEEeqnnumcols=\count195
+\@IEEEeqncolcnt=\count196
+\@IEEEsubeqnnumrollback=\count197
+\@IEEEquantizeheightA=\dimen158
+\@IEEEquantizeheightB=\dimen159
+\@IEEEquantizeheightC=\dimen160
+\@IEEEquantizeprevdepth=\dimen161
+\@IEEEquantizemultiple=\count198
 \@IEEEquantizeboxA=\box51
-\@IEEEtmpitemindent=\dimen161
-\IEEEPARstartletwidth=\dimen162
-\c@IEEEbiography=\count197
+\@IEEEtmpitemindent=\dimen162
+\IEEEPARstartletwidth=\dimen163
+\c@IEEEbiography=\count199
 \@IEEEtranrubishbin=\box52
 )
 ** ATTENTION: Overriding command lockouts (line 2).
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count266
+\U@D=\dimen164
+\l@unhyphenated=\language85
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\l@dumylang=\language2
-Package babel Info: Non-standard hyphenation setup on input line 118.
-\l@nohyphenation=\language3
-\l@polish=\language4
-\l@ukrainian=\language5
-\l@russian=\language6
-\l@german=\language7
-\l@ngerman=\language8
-\l@swissgerman=\language9
-\l@german-x-2023-03-06=\language10
-\l@ngerman-x-2023-03-06=\language11
-\l@afrikaans=\language12
-\l@ibycus=\language13
-\l@arabic=\language14
-\l@armenian=\language15
-\l@basque=\language16
-\l@belarusian=\language17
-\l@bulgarian=\language18
-\l@catalan=\language19
-\l@pinyin=\language20
-\l@churchslavonic=\language21
-\l@coptic=\language22
-\l@croatian=\language23
-\l@czech=\language24
-\l@danish=\language25
-\l@dutch=\language26
-\l@ukenglish=\language27
-\l@usenglishmax=\language28
-\l@esperanto=\language29
-\l@estonian=\language30
-\l@ethiopic=\language31
-\l@farsi=\language32
-\l@finnish=\language33
-\l@schoolfinnish=\language34
-\l@french=\language35
-\l@friulan=\language36
-\l@galician=\language37
-\l@georgian=\language38
-\l@greek=\language39
-\l@hungarian=\language40
-\l@icelandic=\language41
-\l@assamese=\language42
-\l@bengali=\language43
-\l@gujarati=\language44
-\l@hindi=\language45
-\l@kannada=\language46
-\l@malayalam=\language47
-\l@marathi=\language48
-\l@oriya=\language49
-\l@odia=\language50
-\l@panjabi=\language51
-\l@tamil=\language52
-\l@telugu=\language53
-\l@indonesian=\language54
-\l@interlingua=\language55
-\l@irish=\language56
-\l@italian=\language57
-\l@kurmanji=\language58
-\l@latin=\language59
-\l@classiclatin=\language60
-\l@classiclatin=\language61
-\l@latvian=\language62
-\l@lithuanian=\language63
-\l@macedonian=\language64
-\l@mongolian=\language65
-\l@mongolianlmc=\language66
-\l@bokmal=\language67
-\l@nynorsk=\language68
-\l@occitan=\language69
-\l@piedmontese=\language70
-\l@portuguese=\language71
-\l@romanian=\language72
-\l@romansh=\language73
-\l@sanskrit=\language74
-\l@serbian=\language75
-\l@serbianc=\language76
-\l@slovak=\language77
-\l@slovenian=\language78
-\l@spanish=\language79
-\l@swedish=\language80
-\l@thai=\language81
-\l@turkish=\language82
-\l@turkmen=\language83
-\l@uppersorbian=\language84
-\l@welsh=\language85
-\babelcatcodetablenum=\catcodetable12
-\bbl@pattcodes=\catcodetable13
-)
-\babel@savecnt=\count198
-\U@D=\dimen163
-\l@unhyphenated=\language86
+\bbl@dirlevel=\count267
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
-\bbl@attr@locale=\attribute4
-)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language71). Reported on input line 111.
+(babel)             (\language70). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
-
-(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-pt.tex
-UTF-8 Portuguese hyphenation patterns
-(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-pt.tex)))
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -248,23 +151,23 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen164
+\ex@=\dimen165
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen165
+\pmbraise@=\dimen166
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count199
-LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count266
-\leftroot@=\count267
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count269
+\leftroot@=\count270
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count268
-\DOTSCASE@=\count269
+\classnum@=\count271
+\DOTSCASE@=\count272
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -274,30 +177,30 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen166
+\big@size=\dimen167
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count270
+\macc@depth=\count273
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count271
+\c@MaxMatrixCols=\count274
 \dotsspace@=\muskip16
-\c@parentequation=\count272
-\dspbrk@lvl=\count273
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
 \tag@help=\toks20
-\row@=\count274
-\column@=\count275
-\maxfields@=\count276
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
 \andhelp@=\toks21
-\eqnshift@=\dimen167
-\alignsep@=\dimen168
-\tagshift@=\dimen169
-\tagwidth@=\dimen170
-\totwidth@=\dimen171
-\lineht@=\dimen172
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
 \@envbody=\toks22
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -326,10 +229,10 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
 )
-\c@ALC@unique=\count277
-\c@ALC@line=\count278
-\c@ALC@rem=\count279
-\c@ALC@depth=\count280
+\c@ALC@unique=\count280
+\c@ALC@line=\count281
+\c@ALC@rem=\count282
+\c@ALC@depth=\count283
 \ALC@tlm=\skip54
 \algorithmicindent=\skip55
 )
@@ -345,13 +248,13 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen173
-\Gin@req@width=\dimen174
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
@@ -362,7 +265,7 @@ Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: luatex.def on input line 227.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
@@ -375,9 +278,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2023-01-16 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count281
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box55
 )
 (./main.aux
@@ -385,7 +288,7 @@ File: l3backend-luatex.def 2023-01-16 L3 backend support: PDF output (LuaTeX)
 LaTeX Warning: Label `b' multiply defined.
 
 )
-\openout1 = main.aux
+\openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -396,112 +299,25 @@ LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-3.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 13.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
-(Font)              using `TU/ptm/bx/it' instead on input line 13.
-
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen175
+\scratchcounter=\count285
+\scratchdimen=\dimen176
 \scratchbox=\box56
-\nofMPsegments=\count283
-\nofMParguments=\count284
+\nofMPsegments=\count286
+\nofMParguments=\count287
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen176
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
+\MPscratchCnt=\count288
+\MPscratchDim=\dimen177
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
 \everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -512,56 +328,23 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-
-LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 29.
-
-
-LaTeX Font Warning: Font shape `TU/ptm/m/sc' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 33.
-
 <assets/modelo_cascata.png, id=1, 509.905pt x 284.06125pt>
 File: assets/modelo_cascata.png Graphic file (type png)
 <use assets/modelo_cascata.png>
-Package luatex.def Info: assets/modelo_cascata.png  used on input line 79.
-(luatex.def)             Requested size: 227.62204pt x 126.80777pt.
-<assets/user_uml_diagram.png, id=2, 1131.22626pt x 902.37125pt>
+Package pdftex.def Info: assets/modelo_cascata.png  used on input line 79.
+(pdftex.def)             Requested size: 227.62204pt x 126.80777pt.
+<assets/user_uml_diagram.png, id=3, 1131.22626pt x 902.37125pt>
 File: assets/user_uml_diagram.png Graphic file (type png)
 <use assets/user_uml_diagram.png>
-Package luatex.def Info: assets/user_uml_diagram.png  used on input line 88.
-(luatex.def)             Requested size: 227.62204pt x 181.57257pt.
+Package pdftex.def Info: assets/user_uml_diagram.png  used on input line 88.
+(pdftex.def)             Requested size: 227.62204pt x 181.57257pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-\TU/ptm/bx/it/8 between AR vs. MR vs. VR vs. XR?” In-te-rac-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-\TU/ptm/bx/it/8 De-sign Foun-da-tion - IxDF. https://www.interaction-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-\TU/ptm/bx/it/8 design.org/li-te-ra-ture/ar-ti-cle/beyond-ar-vs-vr-what-is-the-
- []
-
-
-Underfull \hbox (badness 6675) in paragraph at lines 93--94
-\TU/ptm/bx/it/8 difference-between-ar-vs-mr-vs-vr-vs-xr (ac-ces-sed May. 30,
- []
-
-
-Underfull \hbox (badness 3679) in paragraph at lines 97--98
-[]\TU/ptm/bx/it/8 I. Som-mer-ville, En-ge-nha-ria de Soft-ware. Pe-ar-son Pren-
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 97--98
-\TU/ptm/bx/it/8 tice Hall, 2011. Avai-la-ble: https://bo-oks.go-o-gle.com.br/bo-
-
+Underfull \hbox (badness 1430) in paragraph at lines 93--94
+\OT1/ptm/m/n/8 AR vs. MR vs. VR vs. XR?" In-te-rac-tion De-sign Foun-da-tion -
  []
 
 
@@ -575,40 +358,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1
-Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}
 
 
-<./assets/modelo_cascata.png>] [2
+ <./assets/modelo_cascata.png>] [2
 
-<./assets/user_uml_diagram.png>] (./main.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+ <./assets/user_uml_diagram.png>] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-)
-
-Here is how much of LuaTeX's memory you used:
- 5533 strings out of 478285
- 125007,1977958 words of node,token memory allocated
- 534 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 10 attribute, 54 glue_spec
-, 7 attribute_list, 1 write nodes
-   avail lists: 2:507,3:242,4:53,5:499,6:49,7:12141,9:467,10:21,11:1412
- 25541 multiletter control sequences out of 65536+600000
- 24 fonts using 1918927 bytes
- 55i,8n,59p,321b,291s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></u
-sr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/
-share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/sh
-are/texlive/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/shar
-e/texlive/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on main.pdf (2 pages, 113877 bytes).
-
-PDF statistics: 50 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+ ) 
+Here is how much of TeX's memory you used:
+ 5181 strings out of 476041
+ 82793 string characters out of 5793164
+ 1868388 words of memory out of 6000000
+ 25602 multiletter control sequences out of 15000+600000
+ 542790 words of font info for 81 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 57i,8n,62p,323b,276s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on main.pdf (2 pages, 136329 bytes).
+PDF statistics:
+ 37 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
