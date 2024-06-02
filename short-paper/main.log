@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.21)  2 JUN 2024 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.21)  2 JUN 2024 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -337,40 +337,43 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Underfull \hbox (badness 10000) in paragraph at lines 38--49
+[]\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---Realidade Au-men-tada, Apli-ca-t
+i-vos Web,
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 38--49
+\OT1/ptm/b/n/9 Mob[]^^Plias, E-commerce, WebXR, Th-ree.js, Re-act, Next.js,
+ []
+
 <assets/modelo_cascata.png, id=1, 509.905pt x 284.06125pt>
 File: assets/modelo_cascata.png Graphic file (type png)
 <use assets/modelo_cascata.png>
-Package pdftex.def Info: assets/modelo_cascata.png  used on input line 74.
+Package pdftex.def Info: assets/modelo_cascata.png  used on input line 92.
 (pdftex.def)             Requested size: 227.62204pt x 126.80777pt.
-<assets/user_uml_diagram.png, id=3, 1131.22626pt x 902.37125pt>
-File: assets/user_uml_diagram.png Graphic file (type png)
-<use assets/user_uml_diagram.png>
-Package pdftex.def Info: assets/user_uml_diagram.png  used on input line 94.
-(pdftex.def)             Requested size: 227.62204pt x 181.57257pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<assets/design.png, id=4, 981.6675pt x 742.775pt>
-File: assets/design.png Graphic file (type png)
-<use assets/design.png>
-Package pdftex.def Info: assets/design.png  used on input line 103.
-(pdftex.def)             Requested size: 227.62204pt x 172.22871pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}
 
 
  <./assets/modelo_cascata.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 116
+<assets/user_uml_diagram.png, id=13, 1131.22626pt x 902.37125pt>
+File: assets/user_uml_diagram.png Graphic file (type png)
+<use assets/user_uml_diagram.png>
+Package pdftex.def Info: assets/user_uml_diagram.png  used on input line 112.
+(pdftex.def)             Requested size: 227.62204pt x 181.57257pt.
+<assets/design.png, id=14, 981.6675pt x 742.775pt>
+File: assets/design.png Graphic file (type png)
+<use assets/design.png>
+Package pdftex.def Info: assets/design.png  used on input line 121.
+(pdftex.def)             Requested size: 227.62204pt x 172.22871pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 116
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -379,17 +382,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <assets/home_page.png, id=15, 431.6125pt x 782.925pt>
 File: assets/home_page.png Graphic file (type png)
 <use assets/home_page.png>
-Package pdftex.def Info: assets/home_page.png  used on input line 155.
+Package pdftex.def Info: assets/home_page.png  used on input line 173.
 (pdftex.def)             Requested size: 113.81102pt x 206.44675pt.
 <assets/product_page.png, id=16, 431.6125pt x 782.925pt>
 File: assets/product_page.png Graphic file (type png)
 <use assets/product_page.png>
-Package pdftex.def Info: assets/product_page.png  used on input line 163.
+Package pdftex.def Info: assets/product_page.png  used on input line 181.
 (pdftex.def)             Requested size: 113.81102pt x 206.44675pt.
 <assets/test_page.png, id=17, 431.6125pt x 782.925pt>
 File: assets/test_page.png Graphic file (type png)
 <use assets/test_page.png>
-Package pdftex.def Info: assets/test_page.png  used on input line 171.
+Package pdftex.def Info: assets/test_page.png  used on input line 189.
 (pdftex.def)             Requested size: 113.81102pt x 206.44675pt.
 
 
@@ -398,21 +401,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./assets/user_uml_diagram.png> <./assets/design.png> <./assets/home_page.pn
-g (PNG copy)>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./assets/user_uml_diagram.png> <./assets/design.png>]
 <assets/review_page.png, id=24, 431.6125pt x 782.925pt>
 File: assets/review_page.png Graphic file (type png)
 <use assets/review_page.png>
-Package pdftex.def Info: assets/review_page.png  used on input line 209.
+Package pdftex.def Info: assets/review_page.png  used on input line 227.
 (pdftex.def)             Requested size: 113.81102pt x 206.44675pt.
-
-Underfull \hbox (badness 1430) in paragraph at lines 238--239
+ [3 <./assets/home_page.png (PNG copy)> <./assets/product_page.png (PNG copy)> 
+<./assets/test_page.png (PNG copy)> <./assets/review_page.png (PNG copy)>]
+Underfull \hbox (badness 1430) in paragraph at lines 256--257
 \OT1/ptm/m/n/8 AR vs. MR vs. VR vs. XR?" In-te-rac-tion De-sign Foun-da-tion -
  []
 
-[3 <./assets/product_page.png (PNG copy)> <./assets/test_page.png (PNG copy)> <
-./assets/review_page.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 []\OT1/ptm/m/n/8 Whimsical, "Whim-si-cal - The Vi-sual Works-pace,"Available:
  []
 
@@ -437,7 +442,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5282 strings out of 476041
  84655 string characters out of 5793164
- 1869388 words of memory out of 6000000
+ 1872388 words of memory out of 6000000
  25685 multiletter control sequences out of 15000+600000
  544489 words of font info for 89 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
@@ -447,7 +452,7 @@ Here is how much of TeX's memory you used:
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on main.pdf (4 pages, 1162348 bytes).
+Output written on main.pdf (4 pages, 1168695 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
