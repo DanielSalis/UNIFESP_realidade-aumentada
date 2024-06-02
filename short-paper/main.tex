@@ -180,6 +180,59 @@ em resposta às descobertas de novos requisitos. Como o caráter deste artigo é
 apenas demonstrativo a aplicação não foi enviada ao chamado "ambiente de
 produção"
 
+\section{Resultados}
+Com a conclusão da implementação a aplicação pode permitir aos usuários seguir
+fluxos de seleção de produtos, inseri-los em seu ambiente real e concluir
+compras. A seguir, os resultados são melhor detalhados:
+
+\subsection{Seleção de Produtos}\label{AA}
+Os usuários podem navegar por uma lista de produtos disponíveis no marketplace,
+podendo ser filtrados por categorias pré-definidas.
+
+\subsection{Inserção no Ambiente Real}\label{AA}
+API WebXR em conjunto com Three.js garantiu a fluidez e rapidez dessa
+funcionalidade. Ao clicar em um produto, o usuário é redirecionado para a
+página de detalhamento do produto e sendo inserir modelos 3D dos produtos
+selecionados nesta página em seu ambiente real, posicionando-os onde achar
+melhor.
+
+\subsection{Conclusão de compra}\label{AA}
+Também foram concluídas as páginas de "carrinho de compras" e "finalização de
+compra", sendo possível revisar o pedido (preços e taxa de entrega) e concluir
+a compra das mobílias selecionadas previamente, figura[7].
+
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+  \caption{Página de revisão do pedido}
+
+  \centering % para centralizarmos a figura
+  \includegraphics[width=4cm]{assets/review_page.png}
+\end{figure}
+%----------------------------------------------------------------------------
+
+\section{Conclusão}
+O desenvolvimento de uma pequena plataforma de marketplace utilizando Nuxt, a
+api WebXR e threejs demonstrou ser uma ideia em potencial que pode ser
+implementada em lojas que visam surpreender os clientes com uma nova abordagem
+de venda. A aplicação permite aos usuários selecionar produtos, visualizá-los
+em seu ambiente real utilizando tecnologia AR, e concluir compras diretamente
+pelo navegador, sem a necessidade de instalar um aplicativo nativo.
+
+\par Apesar do resultado obtido, algumas limitações foram identificadas, como a
+dependência de boas condições de iluminação para a precisão da colocação dos
+objetos 3D e variações de desempenho entre diferentes dispositivos. Além
+disso,no momento os modelos renderizados são carregados dentro do "front-end"
+da aplicação, devido ao peso de cada arquivo para trabalhos futuros será
+importante a criação de um mecanismo que proporcione o carregamento através do
+servidor (evitando que a página utilize muitos dados do usuário). Estas áreas
+representam oportunidades para futuras otimizações, como aprimoramentos nos
+algoritmos de detecção de luz ambiente e otimizações de performance para
+garantir uma experiência uniforme em uma gama mais ampla de dispositivos.
+
+\par A integração de React com WebXR e Three.js proporcionou uma arquitetura modular
+e escalável, facilitando e provando que aplicações web tem potencial para
+transformar tanto a experiencia do usuário quando do desenvolvedor.
+
 %----------------------------------------------------------------------------
 \begin{thebibliography}{00}
   \bibitem{b}L. Tremosa. “Beyond AR vs. VR: What is the Difference between AR vs. MR vs. VR vs. XR?” Interaction Design Foundation - IxDF. https://www.interaction-design.org/literature/article/beyond-ar-vs-vr-what-is-the-difference-between-ar-vs-mr-vs-vr-vs-xr (accessed May. 30, 2024).
@@ -206,6 +259,29 @@ produção"
   \bibitem{shadcn}
   ShadCN. (2024). ShadCN UI - Beautifully designed components for your web applications. [Online]. Available: https://ui.shadcn.com/
 
+  \bibitem{qu2020}
+  C. Qu and L. Aflatoony, "An Augmented Reality Design Tool to Guide Furniture Arrangements at Home," in \textit{Proceedings of the IEEE Conference on Virtual Reality and 3D User Interfaces}, 2020.
+
+  \bibitem{ARFurniture}
+  W. Viyanon, T. Songsuittipong, P. Piyapaisarn, S. Sudchid,
+  ``AR Furniture: Integrating Augmented Reality Technology to Enhance Interior Design using Marker and Markerless tracking,''
+  \emph{Department of Computer Science, Faculty of Science, Srinakharinwirot University, Bangkok, Thailand},
+  waraporn@g.swu.ac.th.
+
+  \bibitem{khandecal}
+  S.~Khan, A.~Mahadik, A.~Pal, and S.~Jacob, ``‘Decal App’-Augmented Reality based Flutter Application,'' \emph{Journal of Augmented Reality}, vol.~1, no.~1, pp.~1--10, 2024.
+
+  \bibitem{phan2010interior}
+  V. T. Phan and S. Y. Choo, "Interior design in augmented reality environment," *International Journal of Computer Applications*, vol. 5, no. 5, pp. 16-21, 2010.
+
+  \bibitem{poudel2018interior}
+  A. Poudel and O. Al-Azzam, "Interior design with augmented reality," in \textit{Midwest Instr. Comput. Symp.}, 2018.
+
+  \bibitem{ma2007virtuality}
+  J. Y. Ma and J. S. Choi, "The Virtuality and Reality of Augmented Reality," \textit{J. Multim.}, vol. 2, no. 1, pp. 32-37, 2007.
+
+  \bibitem{rzeszewski2021usability}
+  M. Rzeszewski and M. Orylski, "Usability of WebXR visualizations in urban planning," \textit{ISPRS International Journal of Geo-Information}, vol. 10, no. 11, p. 721, 2021.
 \end{thebibliography}
 
 \end{document}
