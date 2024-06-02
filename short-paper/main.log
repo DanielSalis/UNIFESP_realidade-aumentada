@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.21)  2 JUN 2024 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.21)  2 JUN 2024 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,20 +331,73 @@ e
 <assets/modelo_cascata.png, id=1, 509.905pt x 284.06125pt>
 File: assets/modelo_cascata.png Graphic file (type png)
 <use assets/modelo_cascata.png>
-Package pdftex.def Info: assets/modelo_cascata.png  used on input line 79.
+Package pdftex.def Info: assets/modelo_cascata.png  used on input line 74.
 (pdftex.def)             Requested size: 227.62204pt x 126.80777pt.
 <assets/user_uml_diagram.png, id=3, 1131.22626pt x 902.37125pt>
 File: assets/user_uml_diagram.png Graphic file (type png)
 <use assets/user_uml_diagram.png>
-Package pdftex.def Info: assets/user_uml_diagram.png  used on input line 88.
+Package pdftex.def Info: assets/user_uml_diagram.png  used on input line 94.
 (pdftex.def)             Requested size: 227.62204pt x 181.57257pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<assets/design.png, id=4, 981.6675pt x 742.775pt>
+File: assets/design.png Graphic file (type png)
+<use assets/design.png>
+Package pdftex.def Info: assets/design.png  used on input line 103.
+(pdftex.def)             Requested size: 227.62204pt x 172.22871pt.
 
-Underfull \hbox (badness 1430) in paragraph at lines 93--94
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}
+
+
+ <./assets/modelo_cascata.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 116
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 116
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<assets/home_page.png, id=15, 431.6125pt x 782.925pt>
+File: assets/home_page.png Graphic file (type png)
+<use assets/home_page.png>
+Package pdftex.def Info: assets/home_page.png  used on input line 155.
+(pdftex.def)             Requested size: 113.81102pt x 206.44675pt.
+<assets/product_page.png, id=16, 431.6125pt x 782.925pt>
+File: assets/product_page.png Graphic file (type png)
+<use assets/product_page.png>
+Package pdftex.def Info: assets/product_page.png  used on input line 163.
+(pdftex.def)             Requested size: 113.81102pt x 206.44675pt.
+<assets/test_page.png, id=17, 431.6125pt x 782.925pt>
+File: assets/test_page.png Graphic file (type png)
+<use assets/test_page.png>
+Package pdftex.def Info: assets/test_page.png  used on input line 171.
+(pdftex.def)             Requested size: 113.81102pt x 206.44675pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 185--186
 \OT1/ptm/m/n/8 AR vs. MR vs. VR vs. XR?" In-te-rac-tion De-sign Foun-da-tion -
+ []
+
+[2 <./assets/user_uml_diagram.png> <./assets/design.png> <./assets/home_page.pn
+g (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[]\OT1/ptm/m/n/8 Whimsical, "Whim-si-cal - The Vi-sual Works-pace,"Available:
  []
 
 
@@ -358,33 +411,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
-
-
- <./assets/modelo_cascata.png>] [2
-
- <./assets/user_uml_diagram.png>] (./main.aux)
+[3 <./assets/product_page.png (PNG copy)> <./assets/test_page.png (PNG copy)>]
+(./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5181 strings out of 476041
- 82793 string characters out of 5793164
- 1868388 words of memory out of 6000000
- 25602 multiletter control sequences out of 15000+600000
- 542790 words of font info for 81 fonts, out of 8000000 for 9000
+ 5259 strings out of 476041
+ 84224 string characters out of 5793164
+ 1869388 words of memory out of 6000000
+ 25663 multiletter control sequences out of 15000+600000
+ 544489 words of font info for 89 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  57i,8n,62p,323b,276s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 136329 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on main.pdf (3 pages, 1066175 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

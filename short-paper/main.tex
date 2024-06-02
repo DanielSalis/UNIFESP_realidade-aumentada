@@ -44,32 +44,27 @@ real[2]. Essa interseção de AR com outras tecnologias expande as possibilidade
 de aplicação, tornando-as ferramentas valiosas para inovação em múltiplos
 setores.
 
-\text{}
-Neste artigo o enfoque será dado à como o e-commerce
-pode se aproveitar de uma maior interatividade do usuário. Uma plataforma de vendas
-que adiciona AR a fim de vender seus produtos propõe experiencias imersivas, ou seja,
-ao invés da visualização estática é possível ver de maneira mais realista e detalhada
-como objetos poderão ser dispostos. Utilizando técnicas de engenharia de software
-(principalmente voltados para a web) com conceitos de realidade virtual foi desenvolvida
-a plataforma ArMarketplace, visando a criação de um protótipo que demostre o fluxo de
-compra de mobílias (seleção de produto, adição ao carrinho, e finalização de compra)
-somado com a visualização das mesmas em 3D no ambiente desejado.
+\par
+Neste artigo o enfoque será dado à como o e-commerce pode se aproveitar de uma
+maior interatividade do usuário. Uma plataforma de vendas que adiciona AR a fim
+de vender seus produtos propõe experiencias imersivas, ou seja, ao invés da
+visualização estática é possível ver de maneira mais realista e detalhada como
+objetos poderão ser dispostos. Utilizando técnicas de engenharia de software
+(principalmente voltados para a web) com conceitos de realidade virtual foi
+desenvolvida a plataforma ArMarketplace, visando a criação de um protótipo que
+demostre o fluxo de compra de mobílias (seleção de produto, adição ao carrinho,
+e finalização de compra) somado com a visualização das mesmas em 3D no ambiente
+desejado.
 
 \section{Metodologia}
 Para Sommerville[3], um modelo de processo de software pode ser descrito comum
 uma representação simplificada desse mesmo processo e ao utilizar o "Modelo em
 Cascata" foram consideradas as atividades fundamentais de Definição dos
-rquisitos, Projeto de sistema e software, Implementação e teste, Integração e
+requisitos, Projeto de sistema e software, Implementação e teste, Integração e
 testes de sistema, Operação e manutenção como fases distintas. Formando dessa
-maneira, a sequencia dos passos a serem seguidos.
-
-\subsection{Definição de requisitos}\label{AA}
-São reconhecidos como serviços, restrições e metas de um sistema ao consultar
-usuários. Neste trabalho como não houveram usuários formalmente consultados,
-apenas outros marketplaces foram analisados para que o fluxo de navegação e
-compra fosse similar (ex: Mercado Livre, Amazon, QueroBolsa). A figura [2]
-mostra o diagrama de atividades que um usuário poderá seguir ao entrar na
-plataforma
+maneira, a sequencia dos passos a serem seguidos. Por se tratar de um projeto
+de curta duração para a disciplina de Realidade Virtual e Aumentada, e com
+apenas um desenvolvedor, esta foi a abordagem escolhida.
 
 %----------------------------------------------------------------------------
 \begin{figure}[h]
@@ -80,6 +75,17 @@ plataforma
 \end{figure}
 %----------------------------------------------------------------------------
 
+\subsection{Definição de requisitos}\label{AA}
+São reconhecidos como serviços, restrições e metas de um sistema ao consultar
+usuários. Neste trabalho como não houveram usuários formalmente consultados,
+apenas outros marketplaces foram analisados para que o fluxo de navegação e
+compra fosse similar (ex: Mercado Livre, Amazon, QueroBolsa). A figura [2]
+mostra o diagrama de atividades que um usuário poderá seguir ao entrar na
+plataforma. Buscando criar um design de referência da aplicação, um protótipo
+foi desenvolvido utilizando a plataforma whimsical [8]. Protótipos visuais
+(figura [3]) ajudam a identificar problemas de layout e usabilidade
+precocemente, economizando tempo e recursos durante o desenvolvimento.
+
 %----------------------------------------------------------------------------
 \begin{figure}[h]
   \caption{Diagrama UML com os requisitos principais}
@@ -89,12 +95,116 @@ plataforma
 \end{figure}
 %----------------------------------------------------------------------------
 
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+  \caption{Design parcial da aplicação utilizando Whimsical}
+
+  \centering % para centralizarmos a figura
+  \includegraphics[width=8cm]{assets/design.png}
+\end{figure}
+%----------------------------------------------------------------------------
+
+\subsection{Projeto de sistema e software}
+O processo de projeto de sistemas busca distribuir os requisitos tanto para o
+software, definindo uma arquitetura geral do sistema. Incluí também inclui a
+identificação e descrição das abstrações fundamentais do sistema de software e
+seus relacionamentos.
+\par
+Abaixo se encontram as linguagens e frameworks utilizados na construção do
+software:
+\begin{itemize}
+  \item WebXR: Uma API que permite o desenvolvimento de experiências de realidade
+        aumentada (AR) e realidade virtual (VR) diretamente nos navegadores da web [4].
+  \item Three.js: Uma biblioteca JavaScript utilizada para criar e renderizar gráficos
+        3D no navegador. Facilita a criação de cenas 3D complexas sem a necessidade de
+        aprofundamentos em WebGL(a API de baixo nível para gráficos 3D na web)[5].
+  \item React e Next.js: React é uma biblioteca JavaScript criada pelo Facebook para a
+        construção de interfaces de usuário baseadas em componentes. Ela permite a
+        criação de aplicações web utilizando uma abordagem declarativa para definir a
+        interface de usuário[6]. Next.js é um framework de desenvolvimento web que
+        utiliza React para a construção de aplicações ele visa facilitar a criação de
+        aplicações React com funcionalidades como renderização do lado do servidor
+        (SSR), geração estática de páginas (SSG) e roteamento simplificado[7].
+  \item ShadCN é uma biblioteca de componentes UI projetada para fornecer elementos de
+        interface de usuário funcionais para aplicações web[9].
+\end{itemize}
+
+\subsection{Implementação e teste unitário}
+Durante esse estágio, o projeto do software é desenvolvido como um conjunto de
+programas ou unidades de programa. Para isso foi utilizado como IDE (Integrated
+Development Environment) o Visual Studio Code. Os testes unitários não foram
+implementados devido ao pequeno escopo do projeto.
+\par Ao utilizar Next.js os dois diretórios mais importantes da aplicação são: "app"
+e o diretório "components". O diretório "app" é responsável por conter
+subdiretórios que representam diferentes seções, funcionalidades ou layouts
+principais da aplicação. "Components" é onde se organizam códigos reutilizáveis
+de interface do usuário (UI). Todos os elementos de UI importados da biblioteca
+ShadCN foram armazenados neste diretório.
+
+\subsection{Integração e teste de sistema}
+As unidades do programa ou programas são solidificadas e testadas como um
+sistema completo para assegurar que os requisitos do software tenham sido
+atendidos. Após o teste, o sistema de software pode ser entregue ao "cliente".
+As figuras [4][5][6] mostram os resultado do desenvolvimento das páginas:
+inicial, de descrição de produto e teste do produto
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+  \caption{Página inicial}
+
+  \centering % para centralizarmos a figura
+  \includegraphics[width=4cm]{assets/home_page.png}
+\end{figure}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+  \caption{Página de produto}
+
+  \centering % para centralizarmos a figura
+  \includegraphics[width=4cm]{assets/product_page.png}
+\end{figure}
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+  \caption{Página de realidade aumentada}
+
+  \centering % para centralizarmos a figura
+  \includegraphics[width=4cm]{assets/test_page.png}
+\end{figure}
+%----------------------------------------------------------------------------
+
+\subsection{Operação e manutenção}
+Nessa etapa o sistema está pronto para uso, a manutenção envolve a correção de
+erros que não foram descobertos em estágios iniciais do ciclo de vida, com
+melhora da implementação das unidades do sistema e ampliação de seus serviços
+em resposta às descobertas de novos requisitos. Como o caráter deste artigo é
+apenas demonstrativo a aplicação não foi enviada ao chamado "ambiente de
+produção"
+
+%----------------------------------------------------------------------------
 \begin{thebibliography}{00}
   \bibitem{b}L. Tremosa. “Beyond AR vs. VR: What is the Difference between AR vs. MR vs. VR vs. XR?” Interaction Design Foundation - IxDF. https://www.interaction-design.org/literature/article/beyond-ar-vs-vr-what-is-the-difference-between-ar-vs-mr-vs-vr-vs-xr (accessed May. 30, 2024).
 
   \bibitem{b}J. Y. Ma and J. S. Choi, "The Virtuality and Reality of Augmented Reality," Journal of Multimedia, vol. 2, no. 1, pp. 32-37, 2007.
 
   \bibitem{sommerville2011engenharia}I. Sommerville, \emph{Engenharia de Software}. Pearson Prentice Hall, 2011. Available: https://books.google.com.br/books?id=H4u5ygAACAAJ
+
+  \bibitem{immersiveweb}
+  The Immersive Web Community Group, "Immersive Web," [Online]. Available: https://immersiveweb.dev/. [Accessed: 30-May-2024].
+
+  \bibitem{threejs}
+  Mr. Doob, "Three.js – JavaScript 3D library," [Online]. Available: https://threejs.org/. [Accessed: 30-May-2024].
+
+  \bibitem{react}
+  Facebook Inc., "React – A JavaScript library for building user interfaces," [Online]. Available: https://react.dev/. [Accessed: 30-May-2024].
+
+  \bibitem{nextjs}
+  Vercel Inc., "Next.js – The React Framework for Production," [Online]. Available: https://nextjs.org/. [Accessed: 30-May-2024].
+
+  \bibitem{whimsical}
+  Whimsical, "Whimsical - The Visual Workspace," Available: https://whimsical.com/. [Accessed: May 30, 2024].
+
+  \bibitem{shadcn}
+  ShadCN. (2024). ShadCN UI - Beautifully designed components for your web applications. [Online]. Available: https://ui.shadcn.com/
 
 \end{thebibliography}
 
