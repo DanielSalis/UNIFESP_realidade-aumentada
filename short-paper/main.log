@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Fedora 39)  (format=lualatex 2024.5.21)  31 MAY 2024 17:22
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Fedora 39)  (format=lualatex 2024.5.21)  2 JUN 2024 12:19
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -520,38 +520,46 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 LaTeX Font Warning: Font shape `TU/ptm/m/sc' undefined
 (Font)              using `TU/ptm/m/n' instead on input line 33.
 
-<assets/user_uml_diagram.png, id=1, 1131.22626pt x 902.37125pt>
+<assets/modelo_cascata.png, id=1, 509.905pt x 284.06125pt>
+File: assets/modelo_cascata.png Graphic file (type png)
+<use assets/modelo_cascata.png>
+Package luatex.def Info: assets/modelo_cascata.png  used on input line 79.
+(luatex.def)             Requested size: 227.62204pt x 126.80777pt.
+<assets/user_uml_diagram.png, id=2, 1131.22626pt x 902.37125pt>
 File: assets/user_uml_diagram.png Graphic file (type png)
 <use assets/user_uml_diagram.png>
-Package luatex.def Info: assets/user_uml_diagram.png  used on input line 71.
+Package luatex.def Info: assets/user_uml_diagram.png  used on input line 88.
 (luatex.def)             Requested size: 227.62204pt x 181.57257pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \TU/ptm/bx/it/8 between AR vs. MR vs. VR vs. XR?” In-te-rac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \TU/ptm/bx/it/8 De-sign Foun-da-tion - IxDF. https://www.interaction-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \TU/ptm/bx/it/8 design.org/li-te-ra-ture/ar-ti-cle/beyond-ar-vs-vr-what-is-the-
  []
 
 
-Underfull \hbox (badness 6675) in paragraph at lines 76--77
+Underfull \hbox (badness 6675) in paragraph at lines 93--94
 \TU/ptm/bx/it/8 difference-between-ar-vs-mr-vs-vr-vs-xr (ac-ces-sed May. 30,
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 80--81
+Underfull \hbox (badness 3679) in paragraph at lines 97--98
 []\TU/ptm/bx/it/8 I. Som-mer-ville, En-ge-nha-ria de Soft-ware. Pe-ar-son Pren-
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 80--81
+Underfull \hbox (badness 1635) in paragraph at lines 97--98
 \TU/ptm/bx/it/8 tice Hall, 2011. Avai-la-ble: https://bo-oks.go-o-gle.com.br/bo-
 
  []
@@ -571,6 +579,8 @@ Before submitting the final camera ready copy, remember to:
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+<./assets/modelo_cascata.png>] [2
+
 <./assets/user_uml_diagram.png>] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -581,13 +591,13 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 5521 strings out of 478285
- 100000,1977958 words of node,token memory allocated
+ 5533 strings out of 478285
+ 125007,1977958 words of node,token memory allocated
  534 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 10 attribute, 54 glue_spec
 , 7 attribute_list, 1 write nodes
-   avail lists: 2:428,3:206,4:51,5:462,6:42,7:10630,9:423,10:21,11:1233
- 25535 multiletter control sequences out of 65536+600000
+   avail lists: 2:507,3:242,4:53,5:499,6:49,7:12141,9:467,10:21,11:1412
+ 25541 multiletter control sequences out of 65536+600000
  24 fonts using 1918927 bytes
  55i,8n,59p,321b,291s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></u
@@ -595,10 +605,10 @@ sr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/
 share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/sh
 are/texlive/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/shar
 e/texlive/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on main.pdf (1 page, 77149 bytes).
+Output written on main.pdf (2 pages, 113877 bytes).
 
-PDF statistics: 45 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+PDF statistics: 50 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
